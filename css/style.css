@@ -1,9 +1,0 @@
-.overlay-text {
-  /* these two are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
-  align-self: flex-start;
-  transform: translateX(-20%);
-
-  /* the following are for example only */
-  background-color: #ffffff;
-  padding:20px;
-}
