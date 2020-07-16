@@ -5,3 +5,7 @@ footer {
   background-color: #333;
   color:#fff;
 }
+
+#h1 {
+      background-image: url("images/case_studies_banner.jpg");
+}
