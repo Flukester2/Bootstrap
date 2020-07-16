@@ -1,8 +1,12 @@
-.hero-image {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
+.bg {
 
+  background-image: url("https://github.com/Flukester2/first-milestone-project/blob/master/images/cropped-promuscle-banner-1.jpg");
+
+
+  height: 100%;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
