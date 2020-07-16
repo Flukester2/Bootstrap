@@ -1,12 +1,9 @@
-.bg {
+.overlay-text {
+  /* these two are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
+  align-self: flex-start;
+  transform: translateX(-20%);
 
-  background-image: url("https://github.com/Flukester2/first-milestone-project/blob/master/images/cropped-promuscle-banner-1.jpg");
-
-
-  height: 100%;
-
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* the following are for example only */
+  background-color: #ffffff;
+  padding:20px;
 }
