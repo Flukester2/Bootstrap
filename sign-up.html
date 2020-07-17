@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Hello, world!</title>
+    <title>Xercise 4 Less</title>
+
+    <script>
+    function yesnoCheck(that) {
+    if (that.value == "other") {
+  alert("Please provide proof");
+        document.getElementById("ifYes").style.display = "block";
+    } else {
+        document.getElementById("ifYes").style.display = "none";
+    }
+}
+    </script>
+
+
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -40,8 +53,58 @@
 
   </div>
 </nav>
+<div class="row">
+<div class="w-100" style="background-image:url('images/case_studies_banner.jpg'); ">
+<h1 class="text-center">Sign Up</h1>
+<p class="text-center mx-2">Enter your details to apply for a membership to ber reviewd by our team. Then we'll contact you to book an induction</p>
+</div>
+</div>
+<div class="row">
+<div class="col-2"></div>
+<form class="col-8" style="padding-bottom: 50px;">
+  <div class="form-group">
+    <label for="FormInput0">Full name</label>
+    <input type="text" class="form-control" id="FormInput0" placeholder="Name">
+  </div>
+    <div class="form-group">
+    <label for="FormInput1">Email address</label>
+    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="FormInput2">Phone number</label>
+    <input type="tel" class="form-control" id="FormInput2" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="FormSelect1">Type of Membership</label>
+    <select class="form-control" id="FormSelect1" onchange="yesnoCheck(this);">
+      <option> Choose a plan</option>
+      <option value="other">Student</option>
+      <option>Regular</option>
+      <option>Permium</option>
+    </select>
+    <div id="ifYes" style="display: none;">
+        <label for="car">Student ID</label>
+    <p for="car">Please provide proof of being a student.</p>
+    <input type="file" class="form-control" id="car" ><br />
+</div>
+  </div>
+  <div class="form-group">
+    <label for="FormSelect2">Membership plan type</label>
+    <select multiple class="form-control" id="FormSelect2">
+      <option>Pay Monthly</option>
+      <option>1 Month membership</option>
+      <option>3 Month membership</option>
+      <option>6 Month membership</option>
+      <option>12 Month membership</option>
+    </select>
+  </div>
+  <div class="form-group">
 
-
+  </div>
+  <button type="submit" class="btn btn-warning">Sign Up</button>
+</form>
+<div class="col-2"></div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
