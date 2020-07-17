@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Xercise 4 Less</title>
 
-    <script>
+    <script type="text/javascript">
     function yesnoCheck(that) {
     if (that.value == "other") {
   alert("Please provide proof");
@@ -61,22 +61,22 @@
 </div>
 <div class="row">
 <div class="col-2"></div>
-<form class="col-8" style="padding-bottom: 50px;">
+<form class="col-8" style="padding-bottom: 50px; padding-top: 50px;">
   <div class="form-group">
     <label for="FormInput0">Full name</label>
-    <input type="text" class="form-control" id="FormInput0" placeholder="Name">
+    <input type="text" class="form-control" id="FormInput0" placeholder="Name" required>
   </div>
     <div class="form-group">
     <label for="FormInput1">Email address</label>
-    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com">
+    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com" required>
   </div>
   <div class="form-group">
     <label for="FormInput2">Phone number</label>
-    <input type="tel" class="form-control" id="FormInput2" placeholder="">
+    <input type="tel" class="form-control" id="FormInput2" placeholder="" required>
   </div>
   <div class="form-group">
     <label for="FormSelect1">Type of Membership</label>
-    <select class="form-control" id="FormSelect1" onchange="yesnoCheck(this);">
+    <select class="form-control" id="FormSelect1" onchange="yesnoCheck(this);" required>
       <option> Choose a plan</option>
       <option value="other">Student</option>
       <option>Regular</option>
@@ -85,12 +85,12 @@
     <div id="ifYes" style="display: none;">
         <label for="car">Student ID</label>
     <p for="car">Please provide proof of being a student.</p>
-    <input type="file" class="form-control" id="car" ><br />
+    <input type="file" class="form-control" id="car"><br />
 </div>
   </div>
   <div class="form-group">
     <label for="FormSelect2">Membership plan type</label>
-    <select multiple class="form-control" id="FormSelect2">
+    <select multiple class="form-control" id="FormSelect2" required>
       <option>Pay Monthly</option>
       <option>1 Month membership</option>
       <option>3 Month membership</option>
