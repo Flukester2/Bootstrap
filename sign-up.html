@@ -18,6 +18,10 @@
         document.getElementById("ifYes").style.display = "none";
     }
 }
+
+    #my_id {
+    display: none;
+}
     </script>
 
 
@@ -101,7 +105,18 @@
   <div class="form-group">
 
   </div>
-  <button type="submit" class="btn btn-warning">Sign Up</button>
+  <button type="submit" class="btn btn-warning" onclick="document.getElementById('my_id').style.display = 'block' ;" >Sign Up</button>
+ <div id="my_id">
+<h3>Thank you</h3>
+<hr>
+<p>We are currently processing you application.</p>
+<h4>Our induction Process</h4>
+<ul>
+<li>Firstly we will arrange for a day which suits you.</li>
+<li>On arrival youw ill be greated by a qualified personal trainer who will show you around and let you experience the gym. </li>
+<li>Lastly at the end of the session you have the choice if you want to commit to this gym and membership plan or not, then we will take a payment method.</li>
+</ul>
+ </div>
 </form>
 <div class="col-2"></div>
 </div>

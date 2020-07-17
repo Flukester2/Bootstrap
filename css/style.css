@@ -9,3 +9,7 @@ footer {
 #h1 {
       background-image: url("images/case_studies_banner.jpg");
 }
+
+#my_id {
+    display: none;
+}
