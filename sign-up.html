@@ -18,10 +18,6 @@
         document.getElementById("ifYes").style.display = "none";
     }
 }
-
-    #my_id {
-    display: none;
-}
     </script>
 
 
@@ -105,8 +101,10 @@
   <div class="form-group">
 
   </div>
-  <button type="submit" class="btn btn-warning" onclick="document.getElementById('my_id').style.display = 'block' ;" >Sign Up</button>
- <div id="my_id">
+  <button type="submit button" class="btn btn-warning" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Sign Up</button>
+ 
+ <div class="collapse" id="collapseExample">
+ <div class="card card-body">
 <h3>Thank you</h3>
 <hr>
 <p>We are currently processing you application.</p>
@@ -116,6 +114,7 @@
 <li>On arrival youw ill be greated by a qualified personal trainer who will show you around and let you experience the gym. </li>
 <li>Lastly at the end of the session you have the choice if you want to commit to this gym and membership plan or not, then we will take a payment method.</li>
 </ul>
+ </div>
  </div>
 </form>
 <div class="col-2"></div>
