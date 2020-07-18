@@ -1,5 +1,5 @@
 footer {
-  position: absolute;
+  position: bottom;
   bottom: 0;
   width: 100%;
   background-color: #333;
@@ -10,6 +10,3 @@ footer {
       background-image: url("images/case_studies_banner.jpg");
 }
 
-#my_id {
-    display: none;
-}
