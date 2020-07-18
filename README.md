@@ -11,20 +11,23 @@ Use this section to provide insight into your UX process, focusing on who this w
 
 Here are some user stories:
 
-- As a potential member, i want to contact customer service, so that i can apply for a member ship or ask questions.
-- As a member, i want to contact customer service, so that i can report issues or enquire about other membership plans.
+- As a potential member, I want to contact customer service, so that I can apply for a member ship or ask questions.
+- As a member, I want to contact customer service, so that I can report issues or enquire about other membership plans.
 
-- As a potential member, i want to check reviews, so that i can make a more informed decision on which membership or gym i should join.
-- As a member, i want to check reviews, so that i can be more aware of how to gym changes for different people.
+- As a potential member, I want to check reviews, so that I can make a more informed decision on which membership or gym I should join.
+- As a member, I want to check reviews, so that I can be more aware of how to gym changes for different people.
 
-- As a potential member, i want to see what services are provided, so that i can understand what i get when i join and what classes i can got to.
-- As a member, i want to see what services are provided, so that i can make better use of my membership.
+- As a potential member, I want to see what services are provided, so that I can understand what I get when I join and what classes I can got to.
+- As a member, I want to see what services are provided, so that I can make better use of my membership.
 
-- [Wireframes](https://github.com/Flukester2/first-milestone-project/blob/de805cabbf5b07256e462ae05e067667431cb286/wireframes)
+- [Wireframes](https://github.com/Flukester2/Bootstrap/blob/110ce95b51d91530d6c94f08e37d6245a218c57c/wireframes)
 
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
+Company Page:
+  - collapse element, The JavaScript plugin is used to show and hide content. Buttons are used as triggers that are mapped to specific elements I have toggle.
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -50,6 +53,9 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [html](https://html.com)
 - [css](https://css-tricks.com)
 - [bootstrap](https://getbootstrap.com)
+- [javascript](https://www.javascript.com)
+
+- [fontawsome](https://fontawesome.com/)
     
 
 
