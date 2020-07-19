@@ -9,15 +9,118 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Xercise 4 Less</title>
 
-    <script type="text/javascript">
-    function yesnoCheck(that) {
-    if (that.value == "other") {
-  alert("Please provide proof");
-        document.getElementById("ifYes").style.display = "block";
-    } else {
-        document.getElementById("ifYes").style.display = "none";
-    }
-}
+ 
+
+
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/Flukester2/first-milestone-project/master/images/xercise4less_logo_03.png" width="125" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+          <a class="dropdown-item" href="company.html">About us</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+        </div>
+      </li>
+    </ul>
+     <button type="button" class="btn btn-warning btn-rounded" href="sign-up.html" role="button">Join Now</button>
+
+  </div>
+</nav>
+<div class="row">
+<div class="w-100" style="background-image:url('images/case_studies_banner.jpg'); ">
+<h1 class="text-center">Sign Up</h1>
+<p class="text-center mx-2">Enter your details to apply for a membership to ber reviewd by our team. Then we'll contact you to book an induction</p>
+</div>
+</div>
+<div class="row">
+<div class="col-2"></div>
+<form class="col-8" style="padding-bottom: 50px; padding-top: 50px;">
+  <div class="form-group">
+    <label for="FormInput0">Full name</label>
+    <input type="text" class="form-control" id="FormInput0" placeholder="Name" required>
+    <div id="FormInput0_err"></div>
+  </div>
+    <div class="form-group">
+    <label for="FormInput1">Email address</label>
+    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com" required>
+    <div id="FormInput1_err"></div>
+  </div>
+  <div class="form-group">
+    <label for="FormInput2">Phone number</label>
+    <input type="tel" class="form-control" id="FormInput2" placeholder="" required>
+    <div id="FormInput2_err"></div>
+  </div>
+  <div class="form-group">
+    <label for="FormSelect1">Type of Membership</label>
+    <select class="form-control" id="FormSelect1" onchange="yesnoCheck(this);" required>
+      <option> Choose a plan</option>
+      <option value="other">Student</option>
+      <option>Regular</option>
+      <option>Permium</option>
+    </select>
+    <div id="ifYes" style="display: none;">
+        <label for="car">Student ID</label>
+    <p for="car">Please provide proof of being a student.</p>
+    <input type="file" class="form-control" id="car"><br />
+</div>
+  </div>
+  <div class="form-group">
+    <label for="FormSelect2">Membership plan type</label>
+    <select multiple class="form-control" id="FormSelect2" required>
+      <option>Pay Monthly</option>
+      <option>1 Month membership</option>
+      <option>3 Month membership</option>
+      <option>6 Month membership</option>
+      <option>12 Month membership</option>
+    </select>
+  </div>
+  <div class="form-group">
+
+  </div>
+  <button type="submit button" id="ok" class="btn btn-warning" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">Sign Up</button>
+ 
+ <div class="collapse" id="collapse">
+ <div class="card card-body">
+<h3>Thank you</h3>
+<hr>
+<p>We are currently processing you application.</p>
+<h4>Our induction Process</h4>
+<ul>
+<li>Firstly we will arrange for a day which suits you.</li>
+<li>On arrival you will be greated by a qualified personal trainer who will show you around and let you experience the gym. </li>
+<li>Lastly at the end of the session you have the choice if you want to commit to this gym and membership plan or not, then we will take a payment method.</li>
+</ul>
+ </div>
+ </div>
+</form>
+
+<div class="col-2"></div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+<script type="text/javascript">
+
 
 function checkForm() {
 
@@ -68,112 +171,17 @@ document.getElementById(id+"_err").innerHTML = "";
 document.getElementById('ok').addEventListener("mouseover", checkForm);
     </script>
 
+<script>
+    function yesnoCheck(that) {
+    if (that.value == "other") {
+  alert("Please provide proof");
+        document.getElementById("ifYes").style.display = "block";
+    } else {
+        document.getElementById("ifYes").style.display = "none";
+    }
+}
+</script>
 
-
-  </head>
-  <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/Flukester2/first-milestone-project/master/images/xercise4less_logo_03.png" width="125" /></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="contact-us.html">Contact Us</a>
-          <a class="dropdown-item" href="company.html">About us</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="gallery.html">Gallery</a>
-        </div>
-      </li>
-    </ul>
-     <button type="button" class="btn btn-warning btn-rounded" href="sign-up.html" role="button">Join Now</button>
-
-  </div>
-</nav>
-<div class="row">
-<div class="w-100" style="background-image:url('images/case_studies_banner.jpg'); ">
-<h1 class="text-center">Sign Up</h1>
-<p class="text-center mx-2">Enter your details to apply for a membership to ber reviewd by our team. Then we'll contact you to book an induction</p>
-</div>
-</div>
-<div class="row">
-<div class="col-2"></div>
-<form class="col-8" style="padding-bottom: 50px; padding-top: 50px;">
-  <div class="form-group">
-    <label for="FormInput0">Full name</label>
-    <input type="text" class="form-control" id="FormInput0" placeholder="Name" required><div id="FormInput0_err"></div>
-  </div>
-    <div class="form-group">
-    <label for="FormInput1">Email address</label>
-    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com" required><div id="FormInput1_err"></div>
-  </div>
-  <div class="form-group">
-    <label for="FormInput2">Phone number</label>
-    <input type="tel" class="form-control" id="FormInput2" placeholder="" required><div id="FormInput2_err"></div>
-  </div>
-  <div class="form-group">
-    <label for="FormSelect1">Type of Membership</label>
-    <select class="form-control" id="FormSelect1" onchange="yesnoCheck(this);" required>
-      <option> Choose a plan</option>
-      <option value="other">Student</option>
-      <option>Regular</option>
-      <option>Permium</option>
-    </select>
-    <div id="ifYes" style="display: none;">
-        <label for="car">Student ID</label>
-    <p for="car">Please provide proof of being a student.</p>
-    <input type="file" class="form-control" id="car"><br />
-</div>
-  </div>
-  <div class="form-group">
-    <label for="FormSelect2">Membership plan type</label>
-    <select multiple class="form-control" id="FormSelect2" required>
-      <option>Pay Monthly</option>
-      <option>1 Month membership</option>
-      <option>3 Month membership</option>
-      <option>6 Month membership</option>
-      <option>12 Month membership</option>
-    </select>
-  </div>
-  <div class="form-group">
-
-  </div>
-  <button type="submit button" id="ok" class="btn btn-warning" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Sign Up</button>
- 
- <div class="collapse" id="collapseExample">
- <div class="card card-body">
-<h3>Thank you</h3>
-<hr>
-<p>We are currently processing you application.</p>
-<h4>Our induction Process</h4>
-<ul>
-<li>Firstly we will arrange for a day which suits you.</li>
-<li>On arrival youw ill be greated by a qualified personal trainer who will show you around and let you experience the gym. </li>
-<li>Lastly at the end of the session you have the choice if you want to commit to this gym and membership plan or not, then we will take a payment method.</li>
-</ul>
- </div>
- </div>
-</form>
-
-<div class="col-2"></div>
-</div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
 </body>
 
 <footer class="page-footer font-small bg-dark">
