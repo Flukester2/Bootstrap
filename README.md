@@ -20,14 +20,26 @@ Here are some user stories:
 - As a potential member, I want to see what services are provided, so that I can understand what I get when I join and what classes I can got to.
 - As a member, I want to see what services are provided, so that I can make better use of my membership.
 
+-as a potential member, I want to have a look at the gallery of people who go to the gym, to make sure other people who go are seeing results and that would help me make my decision on commiting.
+
 - [Wireframes](https://github.com/Flukester2/Bootstrap/blob/110ce95b51d91530d6c94f08e37d6245a218c57c/wireframes)
 
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-Company Page:
+Company page:  [Company page](company.html)
   - collapse element, The JavaScript plugin is used to show and hide content. Buttons are used as triggers that are mapped to specific elements I have toggle.
+
+Home page: [Home page](index.html)
+
+Gallery page: [Gallery page](gallery.html)
+
+Services page: [Services page](services.html)
+
+Sign up page: [Sign up page](sign-up.html)
+
+Contact us page: [Home page](index.html)
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
