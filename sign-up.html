@@ -18,7 +18,56 @@
         document.getElementById("ifYes").style.display = "none";
     }
 }
+
+function checkForm() {
+
+    var err = 0;
+
+    if (document.getElementById("FormInput0").value == '') {
+
+    document.getElementById("FormInput0").style.border = "1px solid #FF0000";
+    document.getElementById("FormInput0_err").innerHTML = "Enter data";
+    err = 1;
+
+}
+
+if (document.getElementById("FormInput2").value.length < 5) {
+
+document.getElementById("FormInput2").style.border = "1px solid #FF0000";
+document.getElementById("FormInput2").innerHTML = "length < 5";
+err = 1;
+
+}
+
+var email = document.getElementById('FormInput1').value;
+emailTest = "^[_.0-9a-z-]+@([0-9a-z][0-9a-z_-]+.)+[a-z]{2,4}$";
+var regex = new RegExp(emailTest); 
+
+if (!regex.test(email)) {
+
+document.getElementById("FormInput1").style.border = "1px solid #FF0000";
+document.getElementById("FormInput1_err").innerHTML = "invalid e-mail";
+err = 1;
+
+}
+
+    if ( err == 1 ) {
+       document.getElementById('ok').setAttribute("disabled","disabled");
+    } else {
+       document.getElementById('ok').removeAttribute("disabled");
+    }
+}
+
+function setBorder(id) {
+
+document.getElementById(id).style.border = "1px solid #C0C0C0";
+document.getElementById(id+"_err").innerHTML = "";
+
+}
+
+document.getElementById('ok').addEventListener("mouseover", checkForm);
     </script>
+
 
 
   </head>
@@ -49,7 +98,7 @@
         </div>
       </li>
     </ul>
-     <button type="button" class="btn btn-warning btn-rounded" href="#" role="button">Join Now</button>
+     <button type="button" class="btn btn-warning btn-rounded" href="sign-up.html" role="button">Join Now</button>
 
   </div>
 </nav>
@@ -64,15 +113,15 @@
 <form class="col-8" style="padding-bottom: 50px; padding-top: 50px;">
   <div class="form-group">
     <label for="FormInput0">Full name</label>
-    <input type="text" class="form-control" id="FormInput0" placeholder="Name" required>
+    <input type="text" class="form-control" id="FormInput0" placeholder="Name" required><div id="FormInput0_err"></div>
   </div>
     <div class="form-group">
     <label for="FormInput1">Email address</label>
-    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com" required>
+    <input type="email" class="form-control" id="FormInput1" placeholder="name@example.com" required><div id="FormInput1_err"></div>
   </div>
   <div class="form-group">
     <label for="FormInput2">Phone number</label>
-    <input type="tel" class="form-control" id="FormInput2" placeholder="" required>
+    <input type="tel" class="form-control" id="FormInput2" placeholder="" required><div id="FormInput2_err"></div>
   </div>
   <div class="form-group">
     <label for="FormSelect1">Type of Membership</label>
@@ -101,7 +150,7 @@
   <div class="form-group">
 
   </div>
-  <button type="submit button" class="btn btn-warning" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Sign Up</button>
+  <button type="submit button" id="ok" class="btn btn-warning" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Sign Up</button>
  
  <div class="collapse" id="collapseExample">
  <div class="card card-body">
@@ -117,6 +166,7 @@
  </div>
  </div>
 </form>
+
 <div class="col-2"></div>
 </div>
 

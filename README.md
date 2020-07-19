@@ -32,15 +32,20 @@ Company page:  [Company page](company.html)
   - collapse element, The JavaScript plugin is used to show and hide content. Buttons are used as triggers that are mapped to specific elements I have toggle.
 
 Home page: [Home page](index.html)
+  - reviews that 
 
 Gallery page: [Gallery page](gallery.html)
+  - carousel of images
 
 Services page: [Services page](services.html)
+  - carousel of classes
 
 Sign up page: [Sign up page](sign-up.html)
+  - form for sign up
 
 Contact us page: [Home page](index.html)
- 
+  - form for contact
+
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
@@ -90,6 +95,8 @@ For any scenarios that have not been automated, test the user stories manually a
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
+
+
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
