@@ -6,8 +6,6 @@ The main purpose of this project is to inform potential members, who want to kno
 
  
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 Here are some user stories:
 
@@ -20,49 +18,41 @@ Here are some user stories:
 - As a potential member, I want to see what services are provided, so that I can understand what I get when I join and what classes I can got to.
 - As a member, I want to see what services are provided, so that I can make better use of my membership.
 
--as a potential member, I want to have a look at the gallery of people who go to the gym, to make sure other people who go are seeing results and that would help me make my decision on commiting.
+- as a potential member, I want to have a look at the gallery of people who go to the gym, to make sure other people who go are seeing results and that would help me make my decision on commiting.
+- as a member, I want to see the gallery of other peopl i go gym with, this helps me stay motivated and strive to do more.
+
+- as a potential member, I would like to be able to sign up for a membership, because I want to immediatly start working out when I go gym rather then do lots of admin.
+- as a member, I want to sign up for a different membership, as some have better benefits or is cheaper for me.
 
 - [Wireframes](https://github.com/Flukester2/Bootstrap/blob/110ce95b51d91530d6c94f08e37d6245a218c57c/wireframes)
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
+### Existing Features
 
 Company page:  [Company page](company.html)
   - collapse element, The JavaScript plugin is used to show and hide content. Buttons are used as triggers that are mapped to specific elements I have toggle.
 
 Home page: [Home page](index.html)
-  - reviews that 
+  - reviews that show quotes and images of people who have liked their time at the gym.
 
 Gallery page: [Gallery page](gallery.html)
-  - carousel of images
+  - carousel of images, this allows the members and potential members to browse through images of gym members.
 
 Services page: [Services page](services.html)
-  - carousel of classes
+  - carousel of classes, this allows potential members and members to check what classes are curently available and know a little about what the classes are.
 
 Sign up page: [Sign up page](sign-up.html)
-  - form for sign up
+  - form for sign up, this allows members to sign up for different memberships and potential members to sign up for new membership. By filling out the form and submitting it, once the required fields are filled in a success message will show with iformation about the induction process.
 
 Contact us page: [Home page](index.html)
-  - form for contact
-
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+  - form for contact this allows members to contact customer service about anyting relating to the gym their membership or the company and potential members to contact customer service about any general enquiries. By filling out the form and submitting it, once the required fields are filled in a success message will show.
 
 ### Features Left to Implement
-- Another feature idea
-- Hero image
-- Map
-- Classes carousel
-- Memberships icons
-- Contact form
-
-
+In the future I would like to develop more features to help furth entise new customers and better inform the current clientele:
+ - A map for location of the HQ and the local gyms near peoples area,
+ - A blog page for news about the company and people involved so as to keep people aware of the importance of community,
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
@@ -98,22 +88,32 @@ For any scenarios that have not been automated, test the user stories manually a
 
 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+3. Class carousel:
+   1.Go to "Services" page
+   2.Click on the next or before to test responsiveness
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+4. Image carousel:
+   1.Go to "Gallery" page
+   2.Click on the next or before to test responsiveness
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+
+The best part for using bootstrap is that the website is very reponsive and can be easy desinged with different users in mind. My website is very responsive to different screen sizes.
+
+
+there where a few bugs that I ran with using js but tgat was mostly user implementation error as I didnt know the position of where you put your scripts mattered. So everytime I tryed to use validation but it didn't work. Later after figuring out that you have to put the script after the elements that are affected or needed to be loaded before the script could run.
+
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+To start I used a completely different repository for this project originally however I spoke to my mentor and we brainstprmed some ideas on how to improve my project. One of the ideas was to comptly start a new repository and impliment bootstrap framework from the beginning, rather then trying to rework my html and css.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+To deploy the website on github pages was straight forward, all I had to do was change the settings in for my github repository.
+Making this reposity the master branch and public from private.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+There was no sepreate branches as i a used jsfiddle.com to experiment and test.
+
+Run my code locally i download the repository and then open up my browser, then using file:// and the location pf my code stored locally.
+
 
 
 ## Credits
